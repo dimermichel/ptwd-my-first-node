@@ -19,4 +19,5 @@ const myServer = myHttp.createServer((request, response) => {
     }
 });
 
-myServer.listen(3000, () => console.log('We are 🏃‍♂️ on port 3000'));
+// myServer.listen(3000, () => console.log('We are 🏃‍♂️ on port 3000'));
+myServer.listen(process.env.PORT, () => console.log('We are 🏃‍♂️ on port 3000'));
